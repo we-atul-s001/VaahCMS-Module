@@ -1,0 +1,28 @@
+{
+    "name": "vaahcms/producttheme",
+    "description": "Theme for Product",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "vaah",
+            "email": "support@vaah.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VaahCms\\Themes\\ProductTheme\\Providers\\ProductThemeServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "VaahCms\\Themes\\ProductTheme\\": ""
+        }
+    }
+}
