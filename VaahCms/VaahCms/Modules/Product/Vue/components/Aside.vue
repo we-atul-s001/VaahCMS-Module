@@ -28,6 +28,16 @@ const items = ref([
                 icon: 'fa-regular fa-chart-bar',
                 route: "/"
             },
+            {
+                label: 'Categories',
+                icon: 'pi pi-tag',
+                route: "/categories"
+            },
+            {
+                label: 'Taxonomies',
+                icon: 'pi pi-tag',
+                route: "/taxonomies"
+            }
         ]
     },
 ]);
