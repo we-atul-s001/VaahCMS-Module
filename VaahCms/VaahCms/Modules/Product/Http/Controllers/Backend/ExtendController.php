@@ -40,7 +40,7 @@ class ExtendController extends Controller
 
         $links[0] = [
             'icon' => 'table',
-            'label'=> 'Product',
+            'label'=> 'Yatra',
             'link'=> route('vh.backend.product')
         ];
 
