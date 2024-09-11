@@ -30,6 +30,7 @@ class CategoriesController extends Controller
             $data['fillable']['columns'] = Category::getFillableColumns();
             $data['fillable']['except'] = Category::getUnFillableColumns();
             $data['empty_item'] = Category::getEmptyItem();
+            $data['taxonomies_training_data'] = Category::getTaxonomiesTrainingData();
 
             $data['actions'] = [];
 

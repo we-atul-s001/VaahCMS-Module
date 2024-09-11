@@ -8,6 +8,7 @@ use Faker\Factory;
 use WebReinvent\VaahCms\Models\VaahModel;
 use WebReinvent\VaahCms\Traits\CrudWithUuidObservantTrait;
 use WebReinvent\VaahCms\Models\User;
+use WebReinvent\VaahCms\Models\Taxonomy;
 use WebReinvent\VaahCms\Libraries\VaahSeeder;
 
 class Category extends VaahModel
@@ -29,6 +30,7 @@ class Category extends VaahModel
         'uuid',
         'name',
         'slug',
+        'taxonomy_id',
         'is_active',
         'created_by',
         'updated_by',
@@ -644,5 +646,11 @@ class Category extends VaahModel
     //-------------------------------------------------
     //-------------------------------------------------
 
+    public static function getTaxonomiesTrainingData($taxonomius_slugs = "training")
+    {
+        $taxonomies = Taxonomy::getTaxonomyByType($taxonomius_slugs);
+
+        return $taxonomies;
+    }
 
 }

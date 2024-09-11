@@ -184,5 +184,16 @@ class Taxonomy extends TaxonomyBase
   }
 
   //-------------------------------------------------
+  public function getTaxonomyByType($taxonomius_slugs)
+  {
+
+
+      $list = self::where('vh_taxonomy_type_id', $this->vh_taxonomy_type_id)
+          ->where('slug', $taxonomius_slugs)
+          ->withTrashed()
+          ->first();
+
+    return $list;
+  }
 
 }
