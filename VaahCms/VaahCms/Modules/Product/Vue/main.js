@@ -16,6 +16,10 @@ import StyleClass from 'primevue/styleclass';
 import Toast from 'primevue/toast';
 import ToastService from 'primevue/toastservice';
 import Tooltip from 'primevue/tooltip';
+import Sidebar from 'primevue/sidebar';
+import Textarea from 'primevue/textarea';
+
+
 //-------------/PrimeVue Imports
 
 //-------------CRUD PrimeVue Imports
@@ -32,6 +36,11 @@ import Divider from "primevue/divider";
 import RadioButton from "primevue/radiobutton";
 import Message from "primevue/message";
 import Tag from "primevue/tag";
+import TreeSelect from 'primevue/treeselect';
+import Dropdown from 'primevue/dropdown';
+import DynamicDialog from 'primevue/dynamicdialog';
+
+
 
 //-------------/CRUD PrimeVue Imports
 
@@ -69,6 +78,9 @@ app.component('ConfirmDialog', ConfirmDialog);
 app.component('Menu', Menu);
 app.component('ProgressBar', ProgressBar);
 app.component('Toast', Toast);
+app.component('Sidebar', Sidebar);
+app.component('Textarea', Textarea);
+
 //-------------/PrimeVue Use
 
 // -------------CRUD PrimeVue Use
@@ -85,6 +97,10 @@ app.component('Divider', Divider);
 app.component('DataTable', DataTable);
 app.component('Message', Message);
 app.component('Tag', Tag);
+app.component('TreeSelect', TreeSelect);
+app.component('Dropdown', Dropdown);
+app.component('DynamicDialog', DynamicDialog);
+
 
 //-------------/CRUD PrimeVue Use
 
