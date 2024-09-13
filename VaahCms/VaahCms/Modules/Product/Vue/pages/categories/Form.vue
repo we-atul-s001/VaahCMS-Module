@@ -146,16 +146,17 @@ const toggleFormMenu = (event) => {
                         <div class="required-field hidden"></div>
                     </div>
                 </VhField>
-                <VhField label="Taxonomy">
-                    <Dropdown v-model="store.item.taxonomy_id"
-                              :options="store.assets.taxonomies_training_data"
-                              optionLabel="name"
-                              optionValue="id"
-                              :filter="true"
-                              placeholder="Select a Taxonomy"
-                              class="p-inputtext-sm w-full"
-                    />
-                </VhField>
+              <VhField label="Email">
+                <div class="p-inputgroup">
+                  <InputText class="w-full"
+                             placeholder="Enter the Email"
+                             name="categories-email"
+                             data-testid="categories-email"
+
+                             v-model="store.item.email" required/>
+                  <div class="required-field hidden"></div>
+                </div>
+              </VhField>
 
                 <VhField label="Slug">
                     <div class="p-inputgroup">
