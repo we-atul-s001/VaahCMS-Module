@@ -30,6 +30,7 @@ class Category extends VaahModel
         'uuid',
         'name',
         'slug',
+        'email',
         'taxonomy_id',
         'is_active',
         'created_by',
